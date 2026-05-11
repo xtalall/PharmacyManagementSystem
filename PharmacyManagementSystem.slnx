@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PharmacyClassLibrary/PharmacyClassLibrary.csproj" />
+  <Project Path="PharmacyWinForms/PharmacyWinForms.csproj" />
+</Solution>
