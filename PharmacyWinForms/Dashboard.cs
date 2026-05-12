@@ -44,14 +44,9 @@ namespace PharmacyWinForms
 
         private void userIcon_Click(object sender, EventArgs e)
         {
-            Point pt = userIcon.PointToScreen(new Point(-UserMenu.Width + userIcon.Width, userIcon.Height));
-            UserMenu.Show(pt);
+           
         }
 
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new Login().Show();
-        }
+      
     }
 }

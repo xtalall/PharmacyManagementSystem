@@ -28,35 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAdDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.btnUserMGMT = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPharmacistDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.btnColes = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.userMGMT1 = new PharmacyWinForms.UserMGMT();
+            this.pharmaciestDashboard1 = new PharmacyWinForms.PharmaciestDashboard();
+            this.adDashboard1 = new PharmacyWinForms.AdDashboard();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(178)))));
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btnAdDashboard);
             this.guna2Panel1.Controls.Add(this.btnUserMGMT);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.btnDashboard);
+            this.guna2Panel1.Controls.Add(this.btnPharmacistDashboard);
             this.guna2Panel1.Controls.Add(this.btnColes);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Location = new System.Drawing.Point(-2, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1362, 82);
+            this.guna2Panel1.Size = new System.Drawing.Size(1374, 82);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2Panel3
@@ -83,20 +92,21 @@
             this.guna2Panel4.Size = new System.Drawing.Size(1, 30);
             this.guna2Panel4.TabIndex = 4;
             // 
-            // guna2Button1
+            // btnAdDashboard
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Alexandria Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
-            this.guna2Button1.Location = new System.Drawing.Point(6, 35);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(156, 45);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "DASHBOARD";
+            this.btnAdDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdDashboard.FillColor = System.Drawing.Color.Transparent;
+            this.btnAdDashboard.Font = new System.Drawing.Font("Alexandria Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
+            this.btnAdDashboard.Location = new System.Drawing.Point(28, 35);
+            this.btnAdDashboard.Name = "btnAdDashboard";
+            this.btnAdDashboard.Size = new System.Drawing.Size(156, 45);
+            this.btnAdDashboard.TabIndex = 4;
+            this.btnAdDashboard.Text = "DASHBOARD";
+            this.btnAdDashboard.Click += new System.EventHandler(this.btnAdDashboard_Click);
             // 
             // btnUserMGMT
             // 
@@ -107,7 +117,7 @@
             this.btnUserMGMT.FillColor = System.Drawing.Color.Transparent;
             this.btnUserMGMT.Font = new System.Drawing.Font("Alexandria Medium", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnUserMGMT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
-            this.btnUserMGMT.Location = new System.Drawing.Point(567, 35);
+            this.btnUserMGMT.Location = new System.Drawing.Point(557, 35);
             this.btnUserMGMT.Name = "btnUserMGMT";
             this.btnUserMGMT.Size = new System.Drawing.Size(156, 45);
             this.btnUserMGMT.TabIndex = 4;
@@ -129,20 +139,21 @@
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "MEDICINE";
             // 
-            // btnDashboard
+            // btnPharmacistDashboard
             // 
-            this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDashboard.FillColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.Font = new System.Drawing.Font("Alexandria Medium", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
-            this.btnDashboard.Location = new System.Drawing.Point(210, 34);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(156, 45);
-            this.btnDashboard.TabIndex = 2;
-            this.btnDashboard.Text = "PHARMACIEST";
+            this.btnPharmacistDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPharmacistDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPharmacistDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPharmacistDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPharmacistDashboard.FillColor = System.Drawing.Color.Transparent;
+            this.btnPharmacistDashboard.Font = new System.Drawing.Font("Alexandria Medium", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPharmacistDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
+            this.btnPharmacistDashboard.Location = new System.Drawing.Point(202, 35);
+            this.btnPharmacistDashboard.Name = "btnPharmacistDashboard";
+            this.btnPharmacistDashboard.Size = new System.Drawing.Size(156, 45);
+            this.btnPharmacistDashboard.TabIndex = 2;
+            this.btnPharmacistDashboard.Text = "PHARMACIST";
+            this.btnPharmacistDashboard.Click += new System.EventHandler(this.btnPharmacistDashboard_Click);
             // 
             // btnColes
             // 
@@ -160,16 +171,65 @@
             this.btnColes.TabIndex = 2;
             this.btnColes.Click += new System.EventHandler(this.btnColes_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.btnPharmacistDashboard;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.btnUserMGMT;
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Alexandria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(14, 12);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 11);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(298, 23);
-            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(346, 32);
+            this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "Pharmacy Managment System --- Log in";
+            // 
+            // userMGMT1
+            // 
+            this.userMGMT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.userMGMT1.Location = new System.Drawing.Point(-2, 83);
+            this.userMGMT1.Name = "userMGMT1";
+            this.userMGMT1.Size = new System.Drawing.Size(1360, 704);
+            this.userMGMT1.TabIndex = 3;
+            this.userMGMT1.Visible = false;
+            // 
+            // pharmaciestDashboard1
+            // 
+            this.pharmaciestDashboard1.Location = new System.Drawing.Point(0, 83);
+            this.pharmaciestDashboard1.Name = "pharmaciestDashboard1";
+            this.pharmaciestDashboard1.Size = new System.Drawing.Size(1360, 704);
+            this.pharmaciestDashboard1.TabIndex = 2;
+            this.pharmaciestDashboard1.Visible = false;
+            // 
+            // adDashboard1
+            // 
+            this.adDashboard1.Location = new System.Drawing.Point(-2, 83);
+            this.adDashboard1.Name = "adDashboard1";
+            this.adDashboard1.Size = new System.Drawing.Size(1360, 704);
+            this.adDashboard1.TabIndex = 1;
+            this.adDashboard1.Visible = false;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(53)))));
+            this.guna2HtmlLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Alexandria", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(178)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(364, 12);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(45, 23);
+            this.guna2HtmlLabel2.TabIndex = 5;
+            this.guna2HtmlLabel2.Text = "ADMIN";
             // 
             // AdminDashboard
             // 
@@ -177,6 +237,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.Controls.Add(this.userMGMT1);
+            this.Controls.Add(this.pharmaciestDashboard1);
+            this.Controls.Add(this.adDashboard1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminDashboard";
@@ -191,14 +254,21 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnColes;
-        private Guna.UI2.WinForms.Guna2Button btnDashboard;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnPharmacistDashboard;
+        private Guna.UI2.WinForms.Guna2Button btnAdDashboard;
         private Guna.UI2.WinForms.Guna2Button btnUserMGMT;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private AdDashboard adDashboard1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private PharmaciestDashboard pharmaciestDashboard1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private UserMGMT userMGMT1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }

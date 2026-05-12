@@ -18,7 +18,11 @@ namespace PharmacyWinForms
         }
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
-        userMGMT1.Visible = false;
+            adDashboard1.Visible = false;
+            pharmaciestDashboard1.Visible = false;
+            userMGMT1.Visible = false;
+            
+            
         }
 
         private void btnColes_Click(object sender, EventArgs e)
@@ -28,7 +32,23 @@ namespace PharmacyWinForms
 
         private void btnUserMGMT_Click(object sender, EventArgs e)
         {
-           userMGMT1.Visible = true;
+            adDashboard1.Visible = false;
+            pharmaciestDashboard1.Visible = false;
+            userMGMT1.Visible = true;
+        }
+
+        private void btnAdDashboard_Click(object sender, EventArgs e)
+        {
+            adDashboard1.Visible = true;
+            pharmaciestDashboard1.Visible = false;
+            userMGMT1.Visible = false;
+        }
+
+        private void btnPharmacistDashboard_Click(object sender, EventArgs e)
+        {
+            pharmaciestDashboard1.Visible=true;
+            adDashboard1.Visible = false;
+            userMGMT1.Visible = false;
         }
     }
 }
