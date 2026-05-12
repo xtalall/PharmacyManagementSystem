@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace PharmacyWinForms
 {
-    public partial class Dashboard : Form
+    public partial class AdminDashboard : Form
     {
-        public Dashboard()
+        public AdminDashboard()
         {
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnColes_Click(object sender, EventArgs e)
         {
-           Login login = new Login();
-            login.Show();
-            this.Hide();
+            Close();
         }
     }
 }
