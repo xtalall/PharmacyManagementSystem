@@ -45,10 +45,18 @@ namespace PharmacyWinForms
                 adminDashboard.ShowDialog();
                 this.Hide();
             }
+
+            else if (textboxUserName.Text == "talal" && textboxPassword.Text == "talal")
+            {
+                Dashboard dashboard = new Dashboard();
+                dashboard.ShowDialog();
+            }
+
             else
             {
                 MessageBox.Show("Invalid username or password. Please try again.");
             }
         }
+
     }
 }
