@@ -17,11 +17,41 @@ namespace PharmacyWinForms
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnColes_Click(object sender, EventArgs e)
         {
-           Login login = new Login();
-            login.Show();
+            Close();
+        }
+
+        private void Minimize_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("M/d/yyyy");
+            lbldate.Text=   DateTime.Now.ToString("hh:mm tt");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("M/d/yyyy");
+
+            lbldate.Text = DateTime.Now.ToString("hh:mm tt");
+
+
+        }
+
+        private void userIcon_Click(object sender, EventArgs e)
+        {
+            Point pt = userIcon.PointToScreen(new Point(-UserMenu.Width + userIcon.Width, userIcon.Height));
+            UserMenu.Show(pt);
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             this.Hide();
+            new Login().Show();
         }
     }
 }
