@@ -16,10 +16,19 @@ namespace PharmacyWinForms
         {
             InitializeComponent();
         }
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+        userMGMT1.Visible = false;
+        }
 
         private void btnColes_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnUserMGMT_Click(object sender, EventArgs e)
+        {
+           userMGMT1.Visible = true;
         }
     }
 }

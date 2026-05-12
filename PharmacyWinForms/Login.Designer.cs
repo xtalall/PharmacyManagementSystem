@@ -33,6 +33,7 @@
             this.btnColes = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.textboxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.textboxUserId = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,7 +45,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -70,9 +70,9 @@
             this.btnColes.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnColes.ForeColor = System.Drawing.Color.White;
             this.btnColes.Image = ((System.Drawing.Image)(resources.GetObject("btnColes.Image")));
-            this.btnColes.Location = new System.Drawing.Point(1320, 3);
+            this.btnColes.Location = new System.Drawing.Point(1317, 0);
             this.btnColes.Name = "btnColes";
-            this.btnColes.Size = new System.Drawing.Size(39, 45);
+            this.btnColes.Size = new System.Drawing.Size(42, 51);
             this.btnColes.TabIndex = 1;
             this.btnColes.Click += new System.EventHandler(this.btnColes_Click);
             // 
@@ -109,6 +109,14 @@
             this.guna2Panel2.Size = new System.Drawing.Size(375, 525);
             this.guna2Panel2.TabIndex = 3;
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel3.Location = new System.Drawing.Point(69, 176);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(233, 1);
+            this.guna2Panel3.TabIndex = 5;
+            // 
             // btnSignin
             // 
             this.btnSignin.BackColor = System.Drawing.Color.Transparent;
@@ -132,7 +140,7 @@
             // textboxPassword
             // 
             this.textboxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textboxPassword.DefaultText = "sdadasd";
+            this.textboxPassword.DefaultText = "";
             this.textboxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textboxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textboxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -145,16 +153,17 @@
             this.textboxPassword.Location = new System.Drawing.Point(85, 396);
             this.textboxPassword.Name = "textboxPassword";
             this.textboxPassword.PasswordChar = '*';
-            this.textboxPassword.PlaceholderText = "";
+            this.textboxPassword.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.textboxPassword.PlaceholderText = "Password";
             this.textboxPassword.SelectedText = "";
             this.textboxPassword.Size = new System.Drawing.Size(200, 31);
             this.textboxPassword.TabIndex = 9;
-            this.textboxPassword.Click += new System.EventHandler(this.textboxPassword_Click);
+          
             // 
             // textboxUserId
             // 
             this.textboxUserId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textboxUserId.DefaultText = "123456";
+            this.textboxUserId.DefaultText = "";
             this.textboxUserId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textboxUserId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textboxUserId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -166,17 +175,19 @@
             this.textboxUserId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textboxUserId.Location = new System.Drawing.Point(85, 321);
             this.textboxUserId.Name = "textboxUserId";
-            this.textboxUserId.PlaceholderText = "";
+            this.textboxUserId.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.textboxUserId.PlaceholderText = "123456";
             this.textboxUserId.SelectedText = "";
             this.textboxUserId.Size = new System.Drawing.Size(200, 31);
             this.textboxUserId.TabIndex = 8;
-            this.textboxUserId.Click += new System.EventHandler(this.textboxUserId_Click);
+ 
             // 
             // textboxUserName
             // 
+            this.textboxUserName.AcceptsTab = true;
             this.textboxUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(189)))), ((int)(((byte)(194)))));
             this.textboxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textboxUserName.DefaultText = "Enter your full name ";
+            this.textboxUserName.DefaultText = "";
             this.textboxUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textboxUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textboxUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -188,12 +199,13 @@
             this.textboxUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textboxUserName.Location = new System.Drawing.Point(85, 246);
             this.textboxUserName.Name = "textboxUserName";
-            this.textboxUserName.PlaceholderText = "";
+            this.textboxUserName.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.textboxUserName.PlaceholderText = "Enter your full name ";
             this.textboxUserName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textboxUserName.SelectedText = "";
             this.textboxUserName.Size = new System.Drawing.Size(200, 31);
             this.textboxUserName.TabIndex = 7;
-            this.textboxUserName.Click += new System.EventHandler(this.textboxUserName_Click);
+   
             // 
             // guna2HtmlLabel6
             // 
@@ -263,14 +275,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(1360, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel3.Location = new System.Drawing.Point(69, 176);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(233, 1);
-            this.guna2Panel3.TabIndex = 5;
             // 
             // Login
             // 
