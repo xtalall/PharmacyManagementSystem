@@ -22,20 +22,7 @@ namespace PharmacyWinForms
             Close();
         }
 
-        private void textboxUserName_Click(object sender, EventArgs e)
-        {
-            textboxUserName.Clear();
-        }
-
-        private void textboxUserId_Click(object sender, EventArgs e)
-        {
-           textboxUserId.Clear();
-        }
-
-        private void textboxPassword_Click(object sender, EventArgs e)
-        {
-            textboxPassword.Clear();
-        }
+       
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
@@ -45,18 +32,12 @@ namespace PharmacyWinForms
                 adminDashboard.ShowDialog();
                 this.Hide();
             }
-
-            else if (textboxUserName.Text == "talal" && textboxPassword.Text == "talal")
-            {
-                Dashboard dashboard = new Dashboard();
-                dashboard.ShowDialog();
-            }
-
             else
             {
-                MessageBox.Show("Invalid username or password. Please try again.");
+                MessageBox.Show("Invalid username or password. Please try again.","Invaild login", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
+      
     }
 }
