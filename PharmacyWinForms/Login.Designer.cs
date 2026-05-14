@@ -71,7 +71,7 @@
             this.btnColes.ForeColor = System.Drawing.Color.White;
             this.btnColes.Image = ((System.Drawing.Image)(resources.GetObject("btnColes.Image")));
             this.btnColes.Location = new System.Drawing.Point(1298, 2);
-            this.btnColes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColes.Margin = new System.Windows.Forms.Padding(2);
             this.btnColes.Name = "btnColes";
             this.btnColes.Size = new System.Drawing.Size(62, 41);
             this.btnColes.TabIndex = 1;
@@ -114,7 +114,7 @@
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Black;
             this.guna2Panel3.Location = new System.Drawing.Point(84, 173);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(205, 1);
             this.guna2Panel3.TabIndex = 5;
@@ -135,7 +135,7 @@
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(180, 45);
             this.btnSignin.TabIndex = 10;
-            this.btnSignin.Text = "Sign in";
+            this.btnSignin.Text = "Log in";
             this.btnSignin.UseTransparentBackground = true;
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
