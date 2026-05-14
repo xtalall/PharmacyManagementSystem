@@ -36,15 +36,15 @@
             this.btnColes = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard_title = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbldate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblTime = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Medicine_btn = new Guna.UI2.WinForms.Guna2Button();
             this.SellMedicicne_btn = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbldate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.title_barPanel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +146,34 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1360, 61);
             this.guna2Panel2.TabIndex = 2;
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.FillColor = System.Drawing.Color.Black;
+            this.guna2Panel3.Location = new System.Drawing.Point(162, 10);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(1, 33);
+            this.guna2Panel3.TabIndex = 7;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.FillColor = System.Drawing.Color.Black;
+            this.guna2Panel1.Location = new System.Drawing.Point(326, 10);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1, 33);
+            this.guna2Panel1.TabIndex = 6;
+            // 
+            // lbldate
+            // 
+            this.lbldate.BackColor = System.Drawing.Color.Transparent;
+            this.lbldate.Font = new System.Drawing.Font("Alexandria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.Location = new System.Drawing.Point(1235, 34);
+            this.lbldate.Name = "lbldate";
+            this.lbldate.Size = new System.Drawing.Size(34, 24);
+            this.lbldate.TabIndex = 5;
+            this.lbldate.Text = "date";
+            // 
             // userIcon
             // 
             this.userIcon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -217,38 +245,10 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lbldate
-            // 
-            this.lbldate.BackColor = System.Drawing.Color.Transparent;
-            this.lbldate.Font = new System.Drawing.Font("Alexandria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(1235, 34);
-            this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(34, 24);
-            this.lbldate.TabIndex = 5;
-            this.lbldate.Text = "date";
-            // 
             // timer2
             // 
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.FillColor = System.Drawing.Color.Black;
-            this.guna2Panel1.Location = new System.Drawing.Point(326, 10);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1, 33);
-            this.guna2Panel1.TabIndex = 6;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.FillColor = System.Drawing.Color.Black;
-            this.guna2Panel3.Location = new System.Drawing.Point(162, 10);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1, 33);
-            this.guna2Panel3.TabIndex = 7;
             // 
             // Dashboard
             // 
