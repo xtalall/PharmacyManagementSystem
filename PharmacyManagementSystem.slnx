@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Userinfo.txt" />
+  </Folder>
   <Project Path="PharmacyClassLibrary/PharmacyClassLibrary.csproj" Id="4538c269-8137-48d3-b011-a0370ef0c61f" />
   <Project Path="PharmacyWinForms/PharmacyWinForms.csproj" Id="c970849e-f45f-465f-9274-4725cd0d274e" />
 </Solution>

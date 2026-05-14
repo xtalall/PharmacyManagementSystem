@@ -96,7 +96,7 @@
             this.Minimize_btn.Location = new System.Drawing.Point(1248, 0);
             this.Minimize_btn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Minimize_btn.Name = "Minimize_btn";
-            this.Minimize_btn.Size = new System.Drawing.Size(52, 48);
+            this.Minimize_btn.Size = new System.Drawing.Size(52, 45);
             this.Minimize_btn.TabIndex = 3;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
             // 
@@ -126,7 +126,7 @@
             this.dashboard_title.Location = new System.Drawing.Point(9, 12);
             this.dashboard_title.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dashboard_title.Name = "dashboard_title";
-            this.dashboard_title.Size = new System.Drawing.Size(307, 24);
+            this.dashboard_title.Size = new System.Drawing.Size(233, 20);
             this.dashboard_title.TabIndex = 0;
             this.dashboard_title.Text = "Pharmacy Management System---Dashboard";
             // 
@@ -201,7 +201,7 @@
             this.lblTime.Font = new System.Drawing.Font("Alexandria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.Location = new System.Drawing.Point(1235, 10);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(34, 24);
+            this.lblTime.Size = new System.Drawing.Size(26, 20);
             this.lblTime.TabIndex = 4;
             this.lblTime.Text = "time";
             // 
@@ -268,7 +268,7 @@
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(1360, 1056);
