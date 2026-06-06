@@ -119,6 +119,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -138,6 +142,9 @@
     </Compile>
     <Compile Include="Controls\TopBarControl.xaml.cs">
       <DependentUpon>TopBarControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -191,19 +198,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles\Colors.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Styles\DataGridStyles.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Styles\InputStyles.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Styles\TextStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -264,15 +259,15 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Resource Include="Resources\Alexandria-Black.ttf" />
-    <Resource Include="Resources\Alexandria-Bold.ttf" />
-    <Resource Include="Resources\Alexandria-ExtraBold.ttf" />
-    <Resource Include="Resources\Alexandria-ExtraLight.ttf" />
-    <Resource Include="Resources\Alexandria-Light.ttf" />
-    <Resource Include="Resources\Alexandria-Medium.ttf" />
-    <Resource Include="Resources\Alexandria-Regular.ttf" />
-    <Resource Include="Resources\Alexandria-SemiBold.ttf" />
-    <Resource Include="Resources\Alexandria-Thin.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-Black.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-Bold.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-ExtraBold.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-ExtraLight.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-Light.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-Medium.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-Regular.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-SemiBold.ttf" />
+    <Resource Include="Resources\Fonts\Alexandria-Thin.ttf" />
     <Resource Include="Resources\Noto\NotoSans-Bold.ttf" />
     <Resource Include="Resources\Noto\NotoSans-BoldItalic.ttf" />
     <Resource Include="Resources\Noto\NotoSans-Italic.ttf" />

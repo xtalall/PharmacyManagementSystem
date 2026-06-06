@@ -1,28 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PharmacyWPF_UI.Controls
 {
-    /// <summary>
-    /// Interaction logic for TopBarControl.xaml
-    /// </summary>
     public partial class TopBarControl : UserControl
     {
         public TopBarControl()
         {
             InitializeComponent();
+            DateText.Text = DateTime.Now.ToString("dddd, MMMM d, yyyy");
+        }
+
+        public void SetUser(string userInitial, SidebarRole role)
+        {
+            UserInitialText.Text = string.IsNullOrEmpty(userInitial) ? "?" : userInitial.Substring(0, 1).ToUpperInvariant();
+            SetRole(role);
+        }
+
+        public void SetRole(SidebarRole role)
+        {
+            if (role == SidebarRole.Admin)
+            {
+                RoleBadgeText.Text = "Admin";
+                RoleBadge.Background = new SolidColorBrush(Color.FromRgb(237, 233, 254));
+                RoleBadgeText.Foreground = new SolidColorBrush(Color.FromRgb(109, 40, 217));
+            }
+            else
+            {
+                RoleBadgeText.Text = "Pharmacist";
+                RoleBadge.Background = new SolidColorBrush(Color.FromRgb(218, 240, 238));
+                RoleBadgeText.Foreground = new SolidColorBrush(Color.FromRgb(0, 172, 178));
+            }
         }
     }
 }

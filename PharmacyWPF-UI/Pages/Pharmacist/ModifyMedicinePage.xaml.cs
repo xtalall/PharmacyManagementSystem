@@ -1,28 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PharmacyWPF_UI.Pages.Pharmacist
 {
-    /// <summary>
-    /// Interaction logic for ModifyMedicinePage.xaml
-    /// </summary>
     public partial class ModifyMedicinePage : Page
     {
         public ModifyMedicinePage()
         {
             InitializeComponent();
         }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e) { }
+        private void SaveEdit_Click(object sender, RoutedEventArgs e) { }
+        private void CancelEdit_Click(object sender, RoutedEventArgs e) { }
+        private void EditRow_Click(object sender, RoutedEventArgs e) { }
+        private void DeleteRow_Click(object sender, RoutedEventArgs e) { }
     }
 }

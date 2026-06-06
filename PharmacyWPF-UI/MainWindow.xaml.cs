@@ -1,28 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PharmacyWPF_UI.Controls;
+using PharmacyWPF_UI.Pages.Admin;
+using PharmacyWPF_UI.Pages.Pharmacist;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PharmacyWPF_UI
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(SidebarRole role, string userInitial)
         {
             InitializeComponent();
+
+            Sidebar.Role = role;
+            TopBar.SetUser(userInitial, role);
+            Sidebar.NavigationRequested += OnNavigationRequested;
+            Sidebar.SignOutRequested += OnSignOutRequested;
+        }
+
+        private void OnSignOutRequested(object sender, EventArgs e)
+        {
+            var login = new LoginWindow();
+            login.Show();
+            Close();
+        }
+
+        private void OnNavigationRequested(object sender, string tag)
+        {
+            Page page = ResolvePage(tag);
+            if (page != null)
+                MainFrame.Navigate(page);
+        }
+
+        private Page ResolvePage(string tag)
+        {
+            switch (tag)
+            {
+                case "Dashboard":
+                    return new DashboardPage();
+                case "SellMedicine":
+                    return new SellMedicinePage();
+                case "AddMedicine":
+                    return new AddMedicinePage();
+                case "ModifyMedicine":
+                    return new ModifyMedicinePage();
+                case "ViewMedicine":
+                    return new PharmacyWPF_UI.Pages.Pharmacist.ViewMedicinePage();
+                case "ValidityCheck":
+                    return new ValidityCheckPage();
+                case "AdminDashboard":
+                    return new AdminDashboardPage();
+                case "Pharmacists":
+                    return new PharmacistsPage();
+                case "UserManagement":
+                    return new UserManagementPage();
+                case "AdminViewMedicine":
+                    return new PharmacyWPF_UI.Pages.Admin.ViewMedicinePage();
+                case "AdminValidityCheck":
+                    return new AdminValidityCheckPage();
+                default:
+                    return null;
+            }
         }
     }
 }
