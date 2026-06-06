@@ -94,6 +94,12 @@
     <EmbeddedResource Include="AdDashboard.resx">
       <DependentUpon>AdDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="UserProfileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProfileControl.Designer.cs">
+      <DependentUpon>UserProfileControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="UserMGMT.resx">
       <DependentUpon>UserMGMT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfileControl.resx">
+      <DependentUpon>UserProfileControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

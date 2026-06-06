@@ -45,6 +45,8 @@
             this.SellMedicicne_btn = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.ElpiseProfileInfo = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.userProfileControl1 = new PharmacyWinForms.userProfileControl();
             this.title_barPanel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -170,7 +172,7 @@
             this.lbldate.Font = new System.Drawing.Font("Alexandria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldate.Location = new System.Drawing.Point(1235, 34);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(26, 20);
+            this.lbldate.Size = new System.Drawing.Size(34, 24);
             this.lbldate.TabIndex = 5;
             this.lbldate.Text = "date";
             // 
@@ -250,12 +252,27 @@
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             // 
+            // ElpiseProfileInfo
+            // 
+            this.ElpiseProfileInfo.TargetControl = this.userIcon;
+            // 
+            // userProfileControl1
+            // 
+            this.userProfileControl1.BackColor = System.Drawing.Color.Transparent;
+            this.userProfileControl1.Location = new System.Drawing.Point(1078, 113);
+            this.userProfileControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.userProfileControl1.Name = "userProfileControl1";
+            this.userProfileControl1.Size = new System.Drawing.Size(282, 280);
+            this.userProfileControl1.TabIndex = 3;
+            this.userProfileControl1.Visible = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(1360, 749);
+            this.ClientSize = new System.Drawing.Size(1360, 1056);
+            this.Controls.Add(this.userProfileControl1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.title_barPanel);
             this.Font = new System.Drawing.Font("Alexandria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -289,6 +306,8 @@
         private System.Windows.Forms.Timer timer2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Elipse ElpiseProfileInfo;
+        private userProfileControl userProfileControl1;
     }
 }
 
